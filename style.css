@@ -1,0 +1,112 @@
+/* Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeInBody 1s forwards;
+}
+
+/* Fade-in Animation for Body */
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header */
+header {
+    background-color: #6644d3;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image */
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #28a745;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom Effect on Hover */
+.profile img:hover {
+    transform: scale(1.1);
+}
+
+/* Sections */
+.section {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* Hover Effect */
+.section:hover {
+    transform: scale(1.02);
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Slide-in Animation */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1s forwards;
+}
+
+/* Slide-in Keyframes */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    animation: fadeIn 1.5s;
+}
+
+/* Fade-in Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
